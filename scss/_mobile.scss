@@ -66,10 +66,18 @@
         'job2'
         'job3';
         grid-template-columns: 1fr;
+
+        ul{
+            text-align: left;
+        }
     }
 
     .projects{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .boxes{
+        font-size: 20px;
     }
 }
 

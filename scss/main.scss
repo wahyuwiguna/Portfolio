@@ -12,7 +12,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     line-height: 1.5;
 }
 
@@ -23,12 +23,14 @@ h1, h2, h3 {
 
     &.lg-heading{
         font-size: 6rem;
+        text-shadow: 3px 1px 1px darken($primary-color, 15);
     }
 
     &.sm-heading{
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        background: rgba($secondary-color, 0.7);
+        
     }
 }
 
@@ -171,10 +173,18 @@ main {
     }
 }
 
+.item {
+    
+    p   {
+        text-align: center;
+    }
+}
+
 .btn-dark {
     @extend .btn;
     background: darken($primary-color, 50);
     color: #fff;
+    text-align: center;
 }
 
 .btn-light {
