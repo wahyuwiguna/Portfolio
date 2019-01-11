@@ -41,7 +41,7 @@
     position: fixed;
     top:0;
     width: 100%;
-    opacity:0.9;
+    opacity:1;
     visibility: hidden;
 
     &.show {
@@ -67,6 +67,7 @@
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
+        opacity: 0.9;
 
         &.show{
             //slide in from top
@@ -77,8 +78,10 @@
     //branding side
     &-branding {
         background: $primary-color;
+        
         transform: translate3d(0, 100%, 0);
         @include easeOut;
+        
         &.show{
             //slide in from  buttom
             transform: translate3d(0,0,0)
